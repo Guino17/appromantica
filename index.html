@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff6f61">
+    <title>App Romántica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192x192.png">
+</head>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker registrado 😎'))
+        .catch(err => console.error('Error al registrar el SW:', err));
+    }
+  </script>
+  
+
+<body>
+
+<div class="container">
+    <h1>Bienvenida, mi amor 💖</h1>
+    <p>Selecciona cómo te sientes hoy:</p>
+
+    <button onclick="showMessage('triste')">Estoy triste</button>
+    <button onclick="showMessage('enojo')">Estoy enojada</button>
+    <button onclick="showMessage('feliz')">Estoy feliz</button>
+    <button onclick="showMessage('no_se')">No sé cómo estoy</button>
+    <button onclick="showMessage('leer')">Solo quiero leer algo</button>
+    <button onclick="showMessage('extraño')">Te extraño</button>
+
+    <div id="message" class="message"></div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
