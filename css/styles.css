@@ -46,3 +46,33 @@ button:hover {
     font-size: 18px;
     color: #555;
 }
+
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+  
+  .dedication {
+    margin: 10px 0;
+    font-style: italic;
+    line-height: 1.5;
+    color: #ffb6c1; /* un tono suave y romántico */
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #bbb;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
